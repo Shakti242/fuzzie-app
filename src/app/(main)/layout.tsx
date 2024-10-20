@@ -1,16 +1,15 @@
-import Sidebar from '@/components/sidebar'
+import { Sidebar } from '@/components/ui/sidebar'
 import React from 'react'
-// import Sidebar from '@/components/sidebar'
+
 
 type Props = { children: React.ReactNode }
-
 const Layout = (props: Props) => {
-
+    const a = 3
+    console.log(a)
     return (
         <div className="flex overflow-hidden h-screen">
             <Sidebar />
             <div className="w-full">
-                {/* <InfoBar /> */}
                 {props.children}
             </div>
         </div>
